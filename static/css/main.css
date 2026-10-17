@@ -1,6 +1,7 @@
 /* Generated CSS - DO NOT EDIT MANUALLY */
 /* Build script combines all CSS files into this single file */
-/* Generated at: Sat Jan 31 03:20:35 UTC 2026 */
+/* Generated at: 현재 날짜: 2026-10-06 
+새로운 날짜를 입력하십시오: (년-월-일) */
 /* Total files combined: 24 */
 
 /* ===== variables.css ===== */
@@ -2605,6 +2606,12 @@ body.intro-active .intro-animation-overlay {
     line-height: 2;
 }
 
+.names-kr-box .name-heart {
+    letter-spacing: 0;
+    position: relative;
+    left: -0.8em;
+}
+
 .cover-title-container {
     width: 100%;
     position: absolute;
@@ -3173,6 +3180,19 @@ body.intro-active .intro-animation-overlay {
         grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     }
 }
+/* Match the opening.gif handwritten title placement. */
+.intro-main-text {
+    position: absolute;
+    top: 31%;
+    left: 24%;
+    width: 76%;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
 
 /* ===== fonts.css ===== */
 /*

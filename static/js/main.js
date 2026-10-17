@@ -1470,42 +1470,49 @@ function initializeKakaoSDK() {
 }
 
 // 공유 기능들
-function shareToKakao() {
+async function shareToKakao() {
     if (!config) return;
 
-    if (typeof window.Kakao === 'undefined') {
-        showToast('카카오톡 공유 기능을 불러오는 중입니다. 잠시 후 다시 시도해주세요.');
-        return;
-    }
-
     const shareConfig = config.content.share.kakao_share;
+    const shareUrl = window.location.href;
+    const title = shareConfig.title;
+    const text = shareConfig.description;
 
     try {
-        window.Kakao.Share.sendDefault({
-            objectType: 'feed',
-            content: {
-                title: shareConfig.title,
-                description: shareConfig.description,
-                imageUrl: config.content.meta.image,
-                link: {
-                    mobileWebUrl: window.location.href,
-                    webUrl: window.location.href
-                }
-            },
-            buttons: [
-                {
+        if (window.Kakao && window.Kakao.isInitialized() && window.Kakao.Share) {
+            await window.Kakao.Share.sendDefault({
+                objectType: 'feed',
+                content: {
+                    title,
+                    description: text,
+                    imageUrl: config.content.meta.image,
+                    link: { mobileWebUrl: shareUrl, webUrl: shareUrl }
+                },
+                buttons: [{
                     title: shareConfig.button_title,
-                    link: {
-                        mobileWebUrl: window.location.href,
-                        webUrl: window.location.href
-                    }
-                }
-            ],
-            installTalk: true
-        });
+                    link: { mobileWebUrl: shareUrl, webUrl: shareUrl }
+                }]
+            });
+            return;
+        }
+
+        // Use the device share sheet when Kakao SDK credentials are unavailable.
+        if (navigator.share) {
+            await navigator.share({ title, text, url: shareUrl });
+            return;
+        }
+
+        await navigator.clipboard.writeText(shareUrl);
+        showToast('\uCD08\uB300\uC7A5 \uB9C1\uD06C\uB97C \uBCF5\uC0AC\uD588\uC2B5\uB2C8\uB2E4. \uCE74\uCE74\uC624\uD1A1\uC5D0 \uBD99\uC5EC\uB123\uC5B4 \uBCF4\uB0B4\uC8FC\uC138\uC694.');
     } catch (error) {
-        console.error('카카오톡 공유 실패:', error);
-        showToast('카카오톡 공유에 실패했습니다. 다시 시도해주세요.');
+        if (error && error.name === 'AbortError') return;
+        console.error('Kakao share failed:', error);
+        try {
+            await navigator.clipboard.writeText(shareUrl);
+            showToast('\uCD08\uB300\uC7A5 \uB9C1\uD06C\uB97C \uBCF5\uC0AC\uD588\uC2B5\uB2C8\uB2E4. \uCE74\uCE74\uC624\uD1A1\uC5D0 \uBD99\uC5EC\uB123\uC5B4 \uBCF4\uB0B4\uC8FC\uC138\uC694.');
+        } catch (copyError) {
+            showToast('\uACF5\uC720\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4. \uCD08\uB300\uC7A5 \uC8FC\uC18C\uB97C \uBCF5\uC0AC\uD574 \uCE74\uCE74\uC624\uD1A1\uC5D0 \uBD99\uC5EC\uB123\uC5B4 \uC8FC\uC138\uC694.');
+        }
     }
 }
 

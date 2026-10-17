@@ -1,76 +1,76 @@
 {
   "wedding": {
     "groom": {
-      "name_kr": "김수환",
-      "name_en": "Soohwan",
-      "display_name": "수환",
-      "birth_order": "장남",
+      "name_kr": "강은구",
+      "name_en": "Eungu",
+      "display_name": "은구",
+      "birth_order": "차남",
       "parents": {
-        "father": "김은희",
-        "mother": "김미자"
+        "father": "강성근",
+        "mother": "구월승"
       }
     },
     "bride": {
-      "name_kr": "조소영",
-      "name_en": "Soyoung",
-      "display_name": "소영",
+      "name_kr": "박하늘",
+      "name_en": "Haneul",
+      "display_name": "하늘",
       "birth_order": "장녀",
       "parents": {
-        "father": "조병의",
-        "mother": "변시내"
+        "father": "박창남",
+        "mother": "박미영"
       }
     },
     "date": {
-      "year": 2026,
-      "month": 5,
-      "day": 17,
-      "time": "14:00",
-      "day_of_week": "일",
-      "display_time": "오후 2시",
-      "iso_format": "2026-05-17T14:00:00"
+      "year": 2027,
+      "month": 9,
+      "day": 25,
+      "time": "12:00",
+      "day_of_week": "\uD1A0",
+      "display_time": "오후 12시",
+      "iso_format": "2027-09-25T12:00:00"
     },
     "venue": {
-      "name": "양재 라시따시어터 단독홀",
-      "address": "서울특별시 서초구 매헌로 16 1층",
-      "full_address": "서울특별시 서초구 매헌로 16 1"
+      "name": "수원명성교회",
+      "address": "경기도 수원시 권선구 덕영대로 1292 (권선동, 수원명성교회)",
+      "full_address": "경기도 수원시 권선구 덕영대로 1292 수원명성교회 2층"
     }
   },
   "accounts": {
     "groom": [
       {
-        "name": "신랑 아버지 성함",
+        "name": "강성근",
         "bank": "국민은행",
         "number": "111111-11-111111",
         "kakaopay_url": "https://qr.kakaopay.com/FFFFFFFFFF"
       },
       {
-        "name": "신랑 어머니 성함",
+        "name": "구월승",
         "bank": "국민은행",
         "number": "123456-01-123456",
         "kakaopay_url": "https://qr.kakaopay.com/FFFFFFFFFF"
       },
       {
-        "name": "신랑 이름",
+        "name": "강은구",
         "bank": "카카오뱅크",
         "number": "3333-06-1234567",
-        "kakaopay_url": "https://qr.kakaopay.com/FFFFFFFFFF"
+        "kakaopay_url": "https://qr.kakaopay.com/FQxhF0uin"
       }
     ],
     "bride": [
       {
-        "name": "신부 아버지 성함",
+        "name": "박창남",
         "bank": "농협은행",
         "number": "132-12-123456",
         "kakaopay_url": "https://qr.kakaopay.com/FFFFFFFFFF"
       },
       {
-        "name": "신부 어머니 성함",
+        "name": "박미영",
         "bank": "신한은행",
         "number": "123-123-123456",
         "kakaopay_url": "https://qr.kakaopay.com/FFFFFFFFFF"
       },
       {
-        "name": "신부 이름",
+        "name": "박하늘",
         "bank": "국민은행",
         "number": "123456-12-123456",
         "kakaopay_url": "https://qr.kakaopay.com/FFFFFFFFFF"
@@ -81,34 +81,29 @@
     {
       "id": 1,
       "question": "결혼식은 언제, 어디서 하나요?",
-      "answer": "2026년 5월 17일 (일) 오후 2시에 라시따시어터에서 진행됩니다.<br>주소: 서울특별시 서초구 매헌로 16 1층"
+      "answer": "2027년 9월 25일 (토) 오후 12시에 수원명성교회에서 진행됩니다.<br>주소: 경기도 수원시 권선구 덕영대로 1292 수원명성교회 2층"
     },
     {
       "id": 2,
       "question": "주차가 가능한가요?",
-      "answer": "네, 라시따시어터 건물 내 주차장을 이용하실 수 있습니다.<br>주차장 인포데스크에서 차량번호를 등록해주세요."
-    },
+      "answer": "네, 수원명성교회 내 주차장을 이용하실 수 있습니다.<br>지하 1층부터 3층까지 자유롭게 주차 가능합니다."
+    },    
     {
       "id": 3,
-      "question": "대중교통으로 어떻게 가나요?",
-      "answer": "신분당선 양재시민의숲역 5번 출구에서 셔틀버스가 운영됩니다.<br>자세한 교통편은 아래 '교통 수단' 섹션을 참고해주세요."
-    },
-    {
-      "id": 4,
       "question": "식사는 제공되나요?",
-      "answer": "네, 결혼식 후 피로연에서 식사가 제공됩니다.<br>식이 진행되는 홀 같은 층에 뷔페 형식으로 준비되어 있습니다."
+      "answer": "네, 결혼식 후 피로연에서 식사가 제공됩니다.<br> 예배당과 연결되어 있는 지하 1층 식당에 뷔페 형식으로 준비되어 있습니다."
     }
   ],
   "content": {
-    "page_title": "김수환 ♥ 조소영의 결혼식에 초대합니다",
+    "page_title": "강은구 ♥ 박하늘의 결혼식에 초대합니다",
     "meta": {
-      "title": "수환 ♥ 소영의 결혼식",
-      "description": "2026년 5월 17일 (일) 오후 2시, 라시따시어터에서 진행됩니다",
+      "title": "은구 ♥ 하늘의 결혼식",
+      "description": "2027년 9월 25일 (토) 오후 12시, 수원명성교회에서 진행됩니다",
       "image": "https://sooftware.s3.ap-northeast-2.amazonaws.com/etc/cover.webp"
     },
     "intro_animation": {
       "scene1": {
-        "main_text": "Soohwan & Soyoung's Wedding Day",
+        "main_text": "Eungu & Haneul's Wedding Day",
         "bottom_left": "WEDDING",
         "bottom_right": "INVITATION"
       }
@@ -120,7 +115,7 @@
         "min": "MIN",
         "sec": "SEC"
       },
-      "message": "수환 ♥ 소영의 결혼식이 {days}일 남았습니다"
+      "message": "은구 ♥ 하늘의 결혼식이 {days}일 남았습니다"
     },
     "buttons": {
       "google_calendar": "Google Calendar에 추가",
@@ -141,7 +136,7 @@
     "letter": {
       "title": "두 사람의 결혼식에 초대합니다.",
       "header": "I N V I T A T I O N",
-      "content": "함께 맞이하는 여덟 번째 봄,<br>저희 두 사람 평생을 약속하려 합니다.<br><br>서로를 있는 모습 그대로 아끼며<br>평생을 좋은 친구이자 사랑하는 연인으로 함께하겠습니다.<br><br>저희가 함께 나아갈 첫걸음에<br>따뜻한 축복 나눠주시면 감사하겠습니다."
+      "content": "첫눈처럼 설레던 만남이<br>어느덧 5년의 시간이 지나 깊은 가을에 닿았습니다.<br><br>서로의 곁을 지키며 자라온 사랑을<br>이제 하나님 앞에서 거룩한 약속으로 맺으려 합니다.<br>귀한 걸음으로 축복해 주시면 감사하겠습니다.<br><br>“이 모든 것 위에 사랑을 더하라 이는 온전하게 매는 띠니라”<br>골로새서 3:14"
     },
     "contact_section": {
       "title": "연락처",
@@ -154,8 +149,8 @@
       "mother_label": "어머니"
     },
     "d_day": {
-      "prefix": "수환",
-      "suffix": "소영의 결혼식이",
+      "prefix": "은구",
+      "suffix": "하늘의 결혼식이",
       "symbol": "♥︎"
     },
     "rsvp": {
@@ -255,13 +250,13 @@
         "native": "공유하기"
       },
       "kakao_share": {
-        "title": "💒 수환 ♥ 소영의 결혼식",
-        "description": "2026년 5월 17일 (일) 오후 2시\n라시따시어터에서 진행됩니다.\n\n소중한 분을 모시고 참석해주시면 감사하겠습니다.",
+        "title": "💒 은구 ♥ 하늘의 결혼식",
+        "description": "2027년 9월 25일 (토) 오후 12시, 수원명성교회에서 진행됩니다",
         "button_title": "청첩장 보기"
       }
     },
     "footer": {
-      "signature": "Copyright 2025. Soohwan & Soyoung All rights reserved.",
+      "signature": "Copyright 2025. Eungu & Haneul All rights reserved.",
       "github_url": "https://github.com/sooftware"
     },
     "chatbot": {
@@ -411,9 +406,9 @@
   },
   "external_links": {
     "maps": {
-      "naver": "https://naver.me/xAFClJVG",
-      "kakao": "https://kko.kakao.com/Eo2w9mM40X",
-      "tmap": "https://tmap.life/1306a1ab"
+      "naver": "https://naver.me/GMmgPQ09",
+      "kakao": "https://place.map.kakao.com/23817922",
+      "tmap": "https://tmap.life/02c036cb"
     }
   },
   "assets": {
