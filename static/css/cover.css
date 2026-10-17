@@ -22,7 +22,7 @@
     top: 3em;
     right: 4em;
     z-index: 3;
-    text-align: right;
+    text-align: center;
 }
 
 .names-kr-box .names {
@@ -31,6 +31,12 @@
     font-size: 1.2rem;
     letter-spacing: 0.8em;
     line-height: 2;
+}
+
+.names-kr-box .name-heart {
+    letter-spacing: 0;
+    position: relative;
+    left: -0.4em;
 }
 
 .cover-title-container {

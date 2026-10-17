@@ -1,7 +1,7 @@
 /* Generated CSS - DO NOT EDIT MANUALLY */
 /* Build script combines all CSS files into this single file */
-/* Generated at: 현재 날짜: 2026-10-06 
-새로운 날짜를 입력하십시오: (년-월-일) */
+/* Generated at: The current date is: 2026-10-17 
+Enter the new date: (yy-mm-dd) */
 /* Total files combined: 24 */
 
 /* ===== variables.css ===== */
@@ -2595,7 +2595,7 @@ body.intro-active .intro-animation-overlay {
     top: 3em;
     right: 4em;
     z-index: 3;
-    text-align: right;
+    text-align: center;
 }
 
 .names-kr-box .names {
@@ -2609,7 +2609,7 @@ body.intro-active .intro-animation-overlay {
 .names-kr-box .name-heart {
     letter-spacing: 0;
     position: relative;
-    left: -0.8em;
+    left: -0.4em;
 }
 
 .cover-title-container {
@@ -2664,6 +2664,7 @@ body.intro-active .intro-animation-overlay {
         font-size: 1.8rem;
     }
 }
+
 
 /* ===== custom-overrides.css ===== */
 /* Custom Overrides for Mobile Wedding Invitation */
@@ -3180,19 +3181,6 @@ body.intro-active .intro-animation-overlay {
         grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     }
 }
-/* Match the opening.gif handwritten title placement. */
-.intro-main-text {
-    position: absolute;
-    top: 31%;
-    left: 24%;
-    width: 76%;
-    height: auto;
-    min-height: 0;
-    margin: 0;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
 
 /* ===== fonts.css ===== */
 /*
