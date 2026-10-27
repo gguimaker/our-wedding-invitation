@@ -1563,10 +1563,11 @@ async function shareNative() {
 }
 
 // 토스트 메시지
-function showToast(message) {
+function showToast(message, options = {}) {
     const toast = document.getElementById('share-toast');
     const toastMessage = document.getElementById('toast-message');
 
+    toast.classList.toggle('single-line', options.singleLine === true);
     toastMessage.textContent = message;
     toast.style.display = 'block';
 
@@ -1725,7 +1726,7 @@ function hideAttendanceNoticeForToday() {
     console.log('✅ 오늘 하루 보지 않기 설정:', tomorrow);
 
     closeAttendanceNoticeModal();
-    showToast('내일부터 다시 표시됩니다');
+    showToast('내일부터 다시 표시됩니다', { singleLine: true });
 }
 
 // 오프닝 애니메이션 완료 후 모달 표시 (이벤트 리스너)

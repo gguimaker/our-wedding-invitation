@@ -207,6 +207,12 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
+.share-toast.single-line {
+    width: max-content;
+    max-width: calc(100vw - 2rem);
+    white-space: nowrap;
+}
+
 @keyframes toastFadeIn {
     from {
         opacity: 0;

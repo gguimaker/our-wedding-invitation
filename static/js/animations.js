@@ -497,10 +497,10 @@ class WeddingAnimationManager {
     // 참석 의사 전달 모달 표시
     showAttendanceModal() {
         // 오늘 하루 보지 않기가 설정되어 있는지 확인
-        const hideUntil = localStorage.getItem('hideAttendanceNoticeUntil');
-        const now = new Date().getTime();
+        const hideUntil = localStorage.getItem('attendance-notice-hide-until');
+        const hideUntilTime = hideUntil ? new Date(hideUntil).getTime() : 0;
 
-        if (hideUntil && now < parseInt(hideUntil)) {
+        if (Number.isFinite(hideUntilTime) && Date.now() < hideUntilTime) {
             console.log('참석 의사 전달 모달: 오늘 하루 보지 않기 설정됨');
             return;
         }

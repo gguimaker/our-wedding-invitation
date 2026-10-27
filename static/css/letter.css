@@ -89,7 +89,7 @@
 /* 모바일 최적화 */
 @media (max-width: 768px) {
     .letter {
-        padding: 3em 2em;
+        padding: 3em 0.5em;
     }
 
     .invitation-header {

@@ -1,4 +1,4 @@
-/* Q&A 아코디언 */
+/* Q&A ?�코?�언 */
 .qna-section {
     padding: 4em 2em;
     background-color: var(--white);
@@ -112,7 +112,7 @@
 }
 
 .accordion-content.expanded {
-    max-height: 2000px; /* 고정 300px에서 1000px로 증가하여 긴 답변도 표시 가능 */
+    max-height: 2000px; /* 고정 300px?�서 1000px�?증�??�여 �??��????�시 가??*/
     opacity: 1;
 }
 
@@ -120,6 +120,7 @@
     padding: 1.2em 1.5em 1.5em 1.5em;
     color: var(--font-color-default);
     font-family: 'Noto Sans KR', sans-serif;
+    word-break: keep-all;
     line-height: 1.6;
     font-size: 0.95em;
     border-top: 1px solid rgba(185, 148, 147, 0.1);
@@ -138,10 +139,10 @@
     }
 }
 
-/* 모바일 최적화 */
+/* 모바??최적??*/
 @media (max-width: 768px) {
     .qna-section {
-        padding: 3em 1.5em;
+        padding: 3em 1.0em;
     }
 
     .accordion-header {
@@ -153,7 +154,7 @@
     }
 
     .answer {
-        padding: 1em 1.2em 1.2em 1.2em;
+        padding: 1em 0.8em 1.2em;
         font-size: 0.9em;
     }
 }
