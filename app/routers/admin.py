@@ -148,6 +148,7 @@ async def get_admin_rsvp(request: Request, admin_user: str = Depends(get_current
                     "guest_name": row['guest_name'],
                     "phone_number": row['phone_number'],
                     "companion_count": row.get('companion_count', 1),
+                    "meal_attendance": row.get('meal_attendance', ''),
                     "timestamp": row['timestamp'].isoformat() if hasattr(row['timestamp'], 'isoformat') else str(
                         row['timestamp'])
                 }
@@ -160,7 +161,8 @@ async def get_admin_rsvp(request: Request, admin_user: str = Depends(get_current
                     "guest_name": row[3],
                     "phone_number": row[4],
                     "companion_count": row[5] if len(row) > 5 else 1,
-                    "timestamp": row[6] if len(row) > 6 else ""
+                    "meal_attendance": row[6] if len(row) > 6 else "",
+                    "timestamp": row[7] if len(row) > 7 else ""
                 }
                 if entry["timestamp"]:
                     entry["timestamp"] = entry["timestamp"].isoformat() if hasattr(entry["timestamp"],
