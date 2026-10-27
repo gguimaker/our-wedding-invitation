@@ -40,6 +40,10 @@
     letter-spacing: 2px;
 }
 
+.letter-reference {
+    font-size: 0.8rem;
+}
+
 .letter .letter {
     text-align: center;
     line-height: 2.2em;
